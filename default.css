@@ -270,19 +270,21 @@ h3 {
 }
 
 .hero-doodle-brain {
+  display: none;
   position: absolute;
-  top: 0;
-  right: 205px;
-  width: 132px;
+  top: 8px;
+  left: 0;
+  width: 104px;
   transform: rotate(-7deg);
 }
 
 .hero-doodle-network {
+  display: none;
   position: absolute;
-  right: 8px;
-  top: 28px;
-  width: 148px;
-  opacity: 0.72;
+  left: 112px;
+  top: 38px;
+  width: 118px;
+  opacity: 0.62;
 }
 
 .intro-grid {
@@ -458,11 +460,13 @@ h3 {
   }
 
   .hero-doodle-brain {
+    display: block;
     left: 0;
     right: auto;
   }
 
   .hero-doodle-network {
+    display: block;
     left: 245px;
     right: auto;
   }
