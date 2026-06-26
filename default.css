@@ -1,13 +1,13 @@
 :root {
-  --bg: #fbfaf7;
+  --bg: #ffffff;
   --paper: #ffffff;
   --ink: #1f2423;
   --muted: #66706d;
-  --line: #dedbd2;
-  --accent: #f3c84b;
-  --accent-ink: #886d07;
+  --line: #e0e6e8;
+  --accent: #5f86a6;
+  --accent-ink: #375d79;
   --green: #7aa384;
-  --blue: #6f93ad;
+  --blue: #5f86a6;
   --max: 1120px;
   --content: 720px;
 }
@@ -25,9 +25,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background:
-    radial-gradient(circle at 12% 8%, rgba(243, 200, 75, 0.13), transparent 28rem),
-    linear-gradient(180deg, #fffefd 0%, var(--bg) 46rem);
+  background: var(--bg);
   color: var(--ink);
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 17px;
@@ -117,7 +115,7 @@ a:hover {
   bottom: 0;
   height: 6px;
   background:
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 80 8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 5 C 11 1, 18 7, 27 4 S 42 1, 52 5 S 68 7, 78 3' fill='none' stroke='%23f3c84b' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E")
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 80 8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 5 C 11 1, 18 7, 27 4 S 42 1, 52 5 S 68 7, 78 3' fill='none' stroke='%235f86a6' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E")
     center / 100% 100% no-repeat;
 }
 
@@ -256,7 +254,7 @@ h3 {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
-  box-shadow: 18px 18px 0 rgba(122, 163, 132, 0.18);
+  box-shadow: 18px 18px 0 rgba(95, 134, 166, 0.16);
 }
 
 .portrait-wrap img {
@@ -340,7 +338,7 @@ h3 {
   transform: rotate(8deg);
 }
 
-.research-doodle-speech {
+.research-doodle-scale {
   right: 0;
   top: 90px;
   width: 150px;
@@ -501,7 +499,7 @@ h3 {
     width: 82px;
   }
 
-  .research-doodle-speech {
+  .research-doodle-scale {
     right: 8px;
     top: 66px;
     width: 98px;

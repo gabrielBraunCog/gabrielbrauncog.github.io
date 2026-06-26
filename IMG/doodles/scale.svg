@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 150" role="img" aria-label="Hand-drawn balance scale doodle">
+  <g fill="none" stroke="#5f86a6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M96 27c-2 25-1 58 0 88"/>
+    <path d="M78 124c12-5 27-5 39 0"/>
+    <path d="M67 135c20-8 41-8 61 0"/>
+    <path d="M45 48c27-9 73-9 101 0"/>
+    <path d="M96 38c-3 7-3 13 0 18"/>
+
+    <path d="M58 49c-8 14-15 27-20 41"/>
+    <path d="M74 49c6 14 11 27 15 41"/>
+    <path d="M31 91h58"/>
+    <path d="M39 103h41"/>
+    <path d="M31 91l8 12"/>
+    <path d="M89 91l-9 12"/>
+    <path d="M46 82c6-3 16-4 25-1"/>
+
+    <path d="M119 49c-7 14-13 27-17 41"/>
+    <path d="M134 49c8 14 15 27 20 41"/>
+    <path d="M101 91h58"/>
+    <path d="M110 103h40"/>
+    <path d="M101 91l9 12"/>
+    <path d="M159 91l-9 12"/>
+    <path d="M118 82c6-3 16-4 25-1"/>
+  </g>
+  <g fill="#5f86a6" opacity=".3">
+    <circle cx="45" cy="38" r="4"/>
+    <circle cx="146" cy="38" r="4"/>
+    <circle cx="96" cy="27" r="5"/>
+  </g>
+</svg>
