@@ -13,6 +13,7 @@
   <meta name="google-site-verification" content="p7xctf7SRFzqorqnDCDFKaPoc167YPvxxG_qPEMldR8">
 </head>
 
+<<<<<<< HEAD
 <body>
   <div class="page-shell">
     <header class="site-header">
@@ -22,6 +23,24 @@
         <a href="research.html">Research</a>
         <a href="contact.html">Contact</a>
         <a href="PDF/CV_2025_Gabriel_Braun.pdf" target="_blank" rel="noopener">CV</a>
+=======
+<body class="fade-in">
+
+  <section class="content">
+
+    <section class="banner">
+      <h1><a href="index.html">Gabriel Braun</a></h1>
+    </section>
+
+    <section class="nav">
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="PDF/CV_2026_Gabriel_Braun.pdf" target="_blank">CV</a></li>
+        </ul>
+>>>>>>> 1a9882cf410e0154b3755a4211a1dd80c39bb1e9
       </nav>
     </header>
 
@@ -64,11 +83,56 @@
       </section>
     </main>
 
+<<<<<<< HEAD
     <footer class="site-footer">
       <span>Last updated: June 2026</span>
       <a href="mailto:gabrielbraun@mail.tau.ac.il">gabrielbraun@mail.tau.ac.il</a>
     </footer>
   </div>
+=======
+    </div>
+
+  </section>
+
+  <section class="footer">
+    Last updated: February 2026
+  </section>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const body = document.body;
+
+      // Ensure page is only shown after initial fade-in setup
+      requestAnimationFrame(() => {
+        body.classList.add('ready'); // reveal page
+        requestAnimationFrame(() => {
+          body.classList.add('loaded'); // start fade-in
+        });
+      });
+
+      // Intercept internal link clicks and add fade-out
+      const links = document.querySelectorAll('a[href]');
+      links.forEach(link => {
+        const url = new URL(link.href);
+        const isSameHost = url.hostname === location.hostname;
+
+        if (isSameHost && !link.target) {
+          link.addEventListener('click', e => {
+            e.preventDefault();
+            const href = link.getAttribute('href');
+            body.classList.remove('loaded');
+            body.classList.add('exiting');
+
+            setTimeout(() => {
+              window.location.href = href;
+            }, 600); // Match the transition duration
+          });
+        }
+      });
+    });
+  </script>
+
+>>>>>>> 1a9882cf410e0154b3755a4211a1dd80c39bb1e9
 </body>
 
 </html>

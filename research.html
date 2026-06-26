@@ -12,6 +12,7 @@
   <link rel="stylesheet" type="text/css" href="default.css">
 </head>
 
+<<<<<<< HEAD
 <body>
   <div class="page-shell">
     <header class="site-header">
@@ -21,6 +22,23 @@
         <a href="research.html" aria-current="page">Research</a>
         <a href="contact.html">Contact</a>
         <a href="PDF/CV_2025_Gabriel_Braun.pdf" target="_blank" rel="noopener">CV</a>
+=======
+<body class="fade-in" style="background-color: #fdf6e3;">
+
+  <section class="content">
+
+    <section class="banner">
+      <h1><a href="index.html">Gabriel Braun</a></h1>
+    </section>
+
+    <section class="nav">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="PDF/CV_2026_Gabriel_Braun.pdf" target="_blank">CV</a></li>
+        </ul>
+>>>>>>> 1a9882cf410e0154b3755a4211a1dd80c39bb1e9
       </nav>
     </header>
 
@@ -64,6 +82,7 @@
         </ol>
       </section>
 
+<<<<<<< HEAD
       <section class="section-block" aria-labelledby="presentations-title">
         <h2 id="presentations-title">Conference Presentations</h2>
         <ul class="conference-list">
@@ -77,6 +96,68 @@
         </ul>
       </section>
     </main>
+=======
+        <li style="margin-bottom: 20px;">
+          <b>Braun, G.</b>, Kuperwasser, I., & Shetreet, E. (2024). Alternative-based commitment: Commitment is modulated by the salience and likelihood of the alternative interpretation. <br>
+          <em>Journal of Pragmatics, 228</em>, 31–44. <br>
+          <a href="https://doi.org/10.1016/j.pragma.2024.05.005" target="_blank">Link to article</a>
+        </li>
+      </ul>
+
+      <h2 style="border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-top: 40px;">Conference Presentations</h2>
+
+      <ul style="list-style-type: none; padding-left: 0;">
+        <li style="margin-bottom: 12px;"><b>Braun, G.</b>, Yeshurun, Y., & Shetreet, E. (2025). Talk at <em>Combating Misinformation in the Digital Age Workshop</em>, Tübingen, Germany.</li>
+        <li style="margin-bottom: 12px;"><b>Braun, G.</b>, Yeshurun, Y., & Shetreet, E. (2025). Poster at <em>11th Israeli Conference on Cognition Research</em>, Akko, Israel.</li>
+        <li style="margin-bottom: 12px;"><b>Braun, G.</b>, Shetreet, E., & Yeshurun, Y. (2024). Poster at <em>AMLaP</em>, Edinburgh, Scotland.</li>
+        <li style="margin-bottom: 12px;"><b>Braun, G.</b>, & Shetreet, E. (2024). Poster at <em>AMLaP 2024</em>, Edinburgh, Scotland.</li>
+        <li style="margin-bottom: 12px;"><b>Braun, G.</b>, Shetreet, E., & Yeshurun, Y. (2024). Poster at <em>Highlights in the Language Sciences Conference</em>, Nijmegen, Netherlands.</li>
+        <li style="margin-bottom: 12px;"><b>Braun, G.</b>, Kuperwasser, I., & Shetreet, E. (2023). Talk at <em>XPRAG</em>, Paris, France.</li>
+        <li style="margin-bottom: 12px;"><b>Braun, G.</b>, Shetreet, E., & Leibovich, T. (2022). Poster at <em>9th Israeli Conference on Cognition Research</em>, Akko, Israel.</li>
+      </ul>
+
+    </section>
+
+  </section>
+
+  <section class="footer">
+    Last updated: February 2026
+  </section>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const body = document.body;
+
+      // Show page only after setup to avoid flash
+      requestAnimationFrame(() => {
+        body.classList.add('ready');
+        requestAnimationFrame(() => {
+          body.classList.add('loaded');
+        });
+      });
+
+      // Fade-out on internal link clicks
+      const links = document.querySelectorAll('a[href]');
+      links.forEach(link => {
+        const url = new URL(link.href);
+        const isSameHost = url.hostname === location.hostname;
+
+        if (isSameHost && !link.target) {
+          link.addEventListener('click', e => {
+            e.preventDefault();
+            const href = link.getAttribute('href');
+            body.classList.remove('loaded');
+            body.classList.add('exiting');
+
+            setTimeout(() => {
+              window.location.href = href;
+            }, 600); // match transition duration
+          });
+        }
+      });
+    });
+  </script>
+>>>>>>> 1a9882cf410e0154b3755a4211a1dd80c39bb1e9
 
     <footer class="site-footer">
       <span>Last updated: June 2026</span>
