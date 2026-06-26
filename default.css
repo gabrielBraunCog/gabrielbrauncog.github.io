@@ -22,6 +22,7 @@
 
 html {
   background: var(--bg);
+  cursor: url("IMG/cursor/glow-arrow.svg") 5 4, auto;
 }
 
 body {
@@ -33,6 +34,7 @@ body {
   font-size: 17px;
   line-height: 1.7;
   letter-spacing: 0;
+  cursor: url("IMG/cursor/glow-arrow.svg") 5 4, auto;
 }
 
 img {
@@ -42,6 +44,7 @@ img {
 
 a {
   color: inherit;
+  cursor: url("IMG/cursor/glow-arrow.svg") 5 4, pointer;
   text-decoration-thickness: 0.08em;
   text-underline-offset: 0.18em;
 }
@@ -251,14 +254,17 @@ h3 {
 
 .portrait-panel {
   position: relative;
-  min-height: 620px;
+  min-height: 500px;
+  overflow: visible;
 }
 
 .portrait-wrap {
   position: absolute;
-  right: 0;
+  z-index: 2;
+  right: 28px;
   bottom: 0;
   width: min(100%, 310px);
+  margin: 0;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -274,6 +280,7 @@ h3 {
 }
 
 .doodle {
+  z-index: 1;
   pointer-events: none;
   user-select: none;
 }
@@ -281,30 +288,31 @@ h3 {
 .hero-doodle-brain {
   display: block;
   position: absolute;
-  top: 34px;
-  right: 18px;
-  width: 104px;
-  opacity: 0.88;
+  top: 44px;
+  left: -18px;
+  width: 128px;
+  opacity: 0.82;
   transform: rotate(9deg);
 }
 
 .hero-doodle-cup {
   display: block;
   position: absolute;
-  top: 78px;
-  left: 126px;
-  width: 112px;
-  opacity: 0.9;
+  top: 154px;
+  right: -38px;
+  width: 132px;
+  opacity: 0.86;
   transform: rotate(2deg);
 }
 
 .hero-doodle-notes {
   display: block;
   position: absolute;
-  left: 18px;
-  top: 0;
-  width: 126px;
-  opacity: 0.9;
+  left: -26px;
+  top: auto;
+  bottom: 76px;
+  width: 124px;
+  opacity: 0.86;
   transform: rotate(-10deg);
 }
 
@@ -471,31 +479,37 @@ h3 {
   }
 
   .portrait-panel {
-    min-height: 620px;
+    min-height: 500px;
     max-width: 440px;
   }
 
   .portrait-wrap {
-    left: 32px;
+    left: 64px;
     right: auto;
   }
 
   .hero-doodle-brain {
     display: block;
-    left: auto;
-    right: 54px;
+    top: 34px;
+    left: 14px;
+    right: auto;
+    width: 120px;
   }
 
   .hero-doodle-cup {
     display: block;
-    left: 148px;
-    right: auto;
+    top: 152px;
+    left: auto;
+    right: 0;
+    width: 128px;
   }
 
   .hero-doodle-notes {
     display: block;
-    left: 18px;
+    left: 12px;
     right: auto;
+    bottom: 76px;
+    width: 118px;
   }
 
   .intro-grid {
@@ -578,7 +592,7 @@ h3 {
   }
 
   .portrait-panel {
-    min-height: 560px;
+    min-height: 438px;
   }
 
   .portrait-wrap {
@@ -588,20 +602,22 @@ h3 {
 
   .hero-doodle-brain {
     top: 34px;
-    right: 6px;
-    width: 86px;
+    left: 0;
+    width: 100px;
   }
 
   .hero-doodle-cup {
-    top: 72px;
-    left: 104px;
-    width: 94px;
+    top: 138px;
+    left: auto;
+    right: 0;
+    width: 108px;
   }
 
   .hero-doodle-notes {
     left: 0;
     right: auto;
-    width: 104px;
+    bottom: 64px;
+    width: 100px;
   }
 
   .site-footer {
