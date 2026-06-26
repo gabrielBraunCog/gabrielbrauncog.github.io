@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 150" role="img" aria-label="Hand-drawn brain doodle">
+  <g fill="none" stroke="#1f2423" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M69 124c-21 2-41-11-45-31-4-18 7-31 20-35-2-14 8-28 23-29 6-16 28-22 42-10 16-6 35 2 40 19 16 5 25 19 23 35-2 20-18 32-38 33-10 16-35 22-50 9-4 4-9 7-15 9z"/>
+    <path d="M71 29c-9 10-8 23 3 31"/>
+    <path d="M107 19c-8 10-7 24 3 33"/>
+    <path d="M143 39c-12 4-19 14-17 27"/>
+    <path d="M45 58c12-2 24 4 30 15"/>
+    <path d="M79 66c-12 8-14 24-4 35"/>
+    <path d="M110 58c11 7 14 22 6 33"/>
+    <path d="M137 78c-10-2-20 4-24 14"/>
+    <path d="M51 91c11-3 24 1 31 10"/>
+    <path d="M85 116c3-12 13-20 25-22"/>
+  </g>
+  <g fill="#f3c84b" opacity=".8">
+    <circle cx="34" cy="28" r="5"/>
+    <circle cx="153" cy="119" r="4"/>
+  </g>
+</svg>
